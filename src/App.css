@@ -1,38 +1,114 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8rem;
+  max-height: 22rem;
+}
+
+.menu {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: rgb(169, 206, 236);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu input, button {
+  width: 70%;
+  height: 50px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:hover {
+  cursor: pointer;
+  background-color: rgb(107, 214, 221);
+  outline: none;
+  transition: 0.2s all;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.quiz {
+  padding: 1rem;
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgb(169, 206, 236);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 10px;
+  margin-right: 0.3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.menu, .quiz, .EndScreen h1 {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.EndScreen {
+  padding: 1rem;
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgb(169, 206, 236);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#nextQuestion {
+  width: 250px;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+.options{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.options button {
+  width: 60%;
+}
+
+.title{
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  color: black;
+}
+
+.name{
+  color: purple;
+}
+
+.endquiz {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
